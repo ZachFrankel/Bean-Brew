@@ -1,12 +1,21 @@
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
+var slideIndex = 0;
 
-function showSlide(n) {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (n + slides.length) % slides.length;
-    slides[currentSlide].style.display = 'block';
+function showSlide() {
+  var slides = document.querySelectorAll(".slide");
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex].style.display = "block";
+
+  slideIndex++;
+
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+
+  setTimeout(showSlide, 3000);
 }
 
-setInterval(() => {
-    showSlide(currentSlide + 1);
-}, 3000);
+window.onload = showSlide;
