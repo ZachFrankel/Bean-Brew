@@ -1,59 +1,66 @@
-/* main */
-body {
-    font-family: Arial, sans-serif;
+body{
     margin: 0;
     padding: 0;
-    background-color: beige;
+    font-family: Arial;
 }
 
-/* Navbar*/
-
-.navbar {
-    background-color: orange;
-    overflow: hidden;
-    text-align: center;
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: gray;
+    border-bottom: 1px solid #fff;
 }
 
-.navbar a {
-    display: inline-block;
-    color: white;
-    padding: 24px 26px;
-    text-decoration: none;
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.navbar a.login, .navbar a.signup {
+nav ul{
+    list-style: none;
     float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+nav ul li a:hover{
+    background-color: lightgray;
+    border-radius: 10px;
     color: black;
 }
 
-/* slideshow */
-
-.slideshow {
-  width: 1000px;
-  height: 500px;
-  margin: 0 auto;
+section{
+    width: 100%;
+    height: 750px;
+    background: url(assets/images/Coffe-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.slide {
-  display: none;
+.current-page{
+    background-color: lightgray;
+    border-radius: 10px;
+    color: black;
 }
-
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-.slide-text {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 30px;
-  text-align: center;
-}
-  
