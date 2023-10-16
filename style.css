@@ -1,9 +1,11 @@
+/* Main */
 body{
     margin: 0;
     padding: 0;
     font-family: Arial;
 }
 
+/* Navbar */
 nav{
     position: fixed;
     top: 0;
@@ -51,16 +53,17 @@ nav ul li a:hover{
     color: black;
 }
 
+.current-page{
+    background-color: lightgray;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Other */
 section{
     width: 100%;
     height: 750px;
     background: url(assets/images/Coffe-1.jpg);
     background-size: cover;
     background-position: center;
-}
-
-.current-page{
-    background-color: lightgray;
-    border-radius: 10px;
-    color: black;
 }
