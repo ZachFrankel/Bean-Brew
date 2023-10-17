@@ -52,6 +52,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
+    animation-name: anim;
+    animation-duration: 0.5s;
     background-color: lightgray;
     border-radius: 10px;
     color: black;
@@ -93,4 +95,9 @@ section{
     background: url(assets/images/Coffe-1.jpg);
     background-size: cover;
     background-position: center;
+}
+
+@keyframes anim{
+    from {background-color: gray;} 
+    to {background-color: lightgray;}
 }
