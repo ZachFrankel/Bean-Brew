@@ -141,15 +141,6 @@ section {
     background-position: center;
 }
 
-@keyframes anim {
-    from {
-        background-color: gray;
-    }
-
-    to {
-        background-color: lightgray;
-    }
-}
 @keyframes anim{
     from {background-color: gray;} 
     to {background-color: lightgray;}
