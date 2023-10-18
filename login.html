@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean & Brew</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login-register.css">
     <script src="script.js"></script>
 </head>
 <body>
@@ -12,24 +13,43 @@
         <div class="logo">Bean & Brew</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li class="dropdown">
                     <a href="#">Ordering</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Coffee</a></li>
-                        <li><a href="#">Baked Goods</a></li>
+                        <li><a href="order-coffee.html">Coffee</a></li>
+                        <li><a href="order-goods.html">Baked Goods</a></li>
                     </ul>
                 <li class="dropdown">
                     <a href="#">Booking</a>
                     <ul class="dropdown-content">
-                        <li><a href="#">Tables</a></li>
-                         <li><a href="#">Cooking Lessons</a></li>
+                        <li><a href="booking-tables.html">Tables</a></li>
+                         <li><a href="booking-lessons.html">Cooking Lessons</a></li>
                      </ul>
                 </li>
                 <li><a href="login.html" class="current-page">Login</a></li>
                 <li><a href="register.html">Register</a></li>
             </ul>
     </nav>
+
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+          </form>
+        </div>
+      </div>
+    <!--
     <section></section>
+    -->
 </body>
 </html>

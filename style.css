@@ -1,49 +1,47 @@
-/* Main */
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
 }
 
-/* Navbar */
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
-    padding: 10px 90px;
+    padding: 10px 5%;
     box-sizing: border-box;
     background: gray;
     border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav .logo{
-    padding: 22px 20px;
-    height: 80px;
-    float: left;
+nav .logo {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
 }
 
-nav ul{
+nav ul {
     list-style: none;
-    float: right;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     position: relative;
 }
 
-nav ul li a{
+nav ul li a {
     line-height: 80px;
     color: #fff;
-    padding: 12px 30px;
+    padding: 12px 20px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -51,7 +49,7 @@ nav ul li a{
     margin-right: 5px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     animation-name: anim;
     animation-duration: 0.5s;
     background-color: lightgray;
@@ -59,14 +57,14 @@ nav ul li a:hover{
     color: black;
 }
 
-.current-page{
+.current-page {
     background-color: lightgray;
     border-radius: 10px;
     color: black;
 }
 
-/* Dropdown*/
-.dropdown-content{
+/* Dropdown */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: gray;
@@ -78,18 +76,62 @@ nav ul li a:hover{
     border-bottom: 1px solid #fff;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown-content li{
+.dropdown-content li {
     padding: 5px 10px;
     text-align: left;
     margin: 5px 0;
 }
 
+@media (max-width: 768px) {
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: gray;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+    }
+
+    .dropdown-content {
+        top: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content.show {
+        display: block;
+    }
+}
+
 /* Other */
-section{
+section {
     width: 100%;
     height: 750px;
     background: url(assets/images/Coffe-1.jpg);
@@ -97,7 +139,12 @@ section{
     background-position: center;
 }
 
-@keyframes anim{
-    from {background-color: gray;} 
-    to {background-color: lightgray;}
+@keyframes anim {
+    from {
+        background-color: gray;
+    }
+
+    to {
+        background-color: lightgray;
+    }
 }
