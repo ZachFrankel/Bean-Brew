@@ -141,7 +141,6 @@ section {
     background-position: center;
 }
 
-<<<<<<< HEAD
 @keyframes anim {
     from {
         background-color: gray;
@@ -151,7 +150,6 @@ section {
         background-color: lightgray;
     }
 }
-=======
 @keyframes anim{
     from {background-color: gray;} 
     to {background-color: lightgray;}
@@ -161,4 +159,3 @@ section {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
   }
->>>>>>> 634deaff17fbcd22549f74c7693a2e784a646d13
