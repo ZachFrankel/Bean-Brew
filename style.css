@@ -76,6 +76,8 @@ nav ul li a:hover{
     left: 0;
     border-radius: 15px;
     border-bottom: 1px solid #fff;
+    animation-name: dropdownAnim;
+    animation-duration: 0.5s;
 }
 
 .dropdown:hover .dropdown-content{
@@ -101,3 +103,8 @@ section{
     from {background-color: gray;} 
     to {background-color: lightgray;}
 }
+
+@keyframes dropdownAnim {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
