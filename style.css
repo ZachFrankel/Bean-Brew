@@ -1,13 +1,11 @@
 /* Main */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-* {
-    font-family: 'Roboto';
-}
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
 body{
     margin: 0;
     padding: 0;
+    background-color: lightgray;
 }
 
 /* Navbar */
@@ -84,6 +82,8 @@ nav ul li a:hover{
 }
 
 .dropdown:hover .dropdown-content{
+    animation-name: dropdownAnim;
+    animation-duration: 0.5s;
     display: block;
 }
 
@@ -95,11 +95,16 @@ nav ul li a:hover{
 
 /* Other */
 section{
+    margin-top: 100px;
     width: 100%;
     height: 750px;
     background: url(assets/images/Coffe-1.jpg);
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    font-family: 'Zeyada', cursive;
 }
 
 @keyframes anim{
@@ -111,7 +116,7 @@ section{
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-  
+
 .tcenter {
     text-align: center;
 
@@ -170,6 +175,7 @@ section{
     width: 750px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     
   }
   
