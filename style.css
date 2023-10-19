@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-color: lightgray;
 }
 
 /* Navbar */
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@ nav{
     border-bottom: 1px solid #fff;
 }
 
-nav .logo{
+nav .logo {
     padding: 22px 20px;
     height: 80px;
     float: left;
@@ -31,7 +31,7 @@ nav .logo{
     color: #fff;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     float: right;
     margin: 0;
@@ -39,11 +39,11 @@ nav ul{
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     position: relative;
 }
 
-nav ul li a{
+nav ul li a {
     line-height: 80px;
     color: #fff;
     padding: 12px 30px;
@@ -54,7 +54,7 @@ nav ul li a{
     margin-right: 5px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     animation-name: anim;
     animation-duration: 0.5s;
     background-color: lightgray;
@@ -62,14 +62,14 @@ nav ul li a:hover{
     color: black;
 }
 
-.current-page{
+.current-page {
     background-color: lightgray;
     border-radius: 10px;
     color: black;
 }
 
 /* Dropdown*/
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: gray;
@@ -81,20 +81,20 @@ nav ul li a:hover{
     border-bottom: 1px solid #fff;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     animation-name: dropdownAnim;
     animation-duration: 0.5s;
     display: block;
 }
 
-.dropdown-content li{
+.dropdown-content li {
     padding: 5px 10px;
     text-align: left;
     margin: 5px 0;
 }
 
 /* Other */
-section{
+section {
     margin-top: 100px;
     width: 100%;
     height: 750px;
@@ -103,79 +103,18 @@ section{
     background-position: center;
 }
 
-h1 {
+.h1 {
     font-family: 'Zeyada', cursive;
+    text-align: center;
 }
 
-@keyframes anim{
+@keyframes anim {
     from {background-color: gray;} 
     to {background-color: lightgray;}
 }
 
-@keyframes dropdownAnim{
+@keyframes dropdownAnim {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-.tcenter {
-    text-align: center;
-
-  }
-
-  div.elem-group {
-    margin: 20px 0;
-  }
-  
-  label {
-    display: block;
-    font-family: 'Nanum Gothic';
-    padding-bottom: 10px;
-    font-size: 1.25em;
-  }
-  
-  input, select, textarea {
-    border-radius: 2px;
-    border: 2px solid #777;
-    box-sizing: border-box;
-    font-size: 1.25em;
-    font-family: 'Nanum Gothic';
-    width: 100%;
-    padding: 10px;
-  }
-  
-  div.elem-group.inlined input {
-    width: 95%;
-    display: inline-block;
-  }
-  
-  textarea {
-    height: 250px;
-  }
-  
-  hr {
-    border: 1px dotted #ccc;
-  }
-  
-  button {
-    height: 50px;
-    background: orange;
-    border: none;
-    color: white;
-    font-size: 1.25em;
-    font-family: 'Nanum Gothic';
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    border: 5px solid #000;
-  }
-
-  .width-form{
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    
-  }
   
