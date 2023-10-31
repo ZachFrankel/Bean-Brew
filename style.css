@@ -122,7 +122,7 @@ nav ul li a:hover {
 }
 
 .serving {
-    margin-top: 46px;
+    margin-top: 40px;
     font-family: 'Zeyada', cursive;
     text-align: center;
     color: #D89B31;
@@ -145,8 +145,28 @@ nav ul li a:hover {
 
 /* Social Media Buttons */
 .socialMedia {
-    margin-top: 46px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
+
+.socialButton {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.socialButton i {
+    font-size: 25px;
+    color: gray;
+}
+
 /* Other */
 .bg {
     margin-top: 100px;
