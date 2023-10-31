@@ -101,7 +101,52 @@ nav ul li a:hover {
     text-align: left;
     margin: 5px 0;
 }
+  
+/* Footer */
+.footer_whole {
+    background-color: #393d47;
+    border-top: 1px solid #fff;
+    text-align: center; 
+    padding: 20px 0; 
+}
 
+.footer-link {
+    color: #D89B31;
+    font-size: 18px;
+    margin: 0 20px; 
+    text-decoration: none; 
+}
+
+.footer-link:hover {
+    cursor: pointer;
+}
+
+.serving {
+    margin-top: 46px;
+    font-family: 'Zeyada', cursive;
+    text-align: center;
+    color: #D89B31;
+}
+
+#PrivacyP, #CookieP, #TandC {
+    color: #D89B31;
+    display: inline-block; 
+    box-sizing: border-box; 
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: #393d47;
+}
+
+#PrivacyP:hover, #CookieP:hover, #TandC:hover {
+    animation-name: footerAnim;
+    animation-duration: 0.5s;
+    color: #fff;
+}
+
+/* Social Media Buttons */
+.socialMedia {
+    margin-top: 46px;
+}
 /* Other */
 .bg {
     margin-top: 100px;
@@ -125,45 +170,4 @@ nav ul li a:hover {
 @keyframes footerAnim {
     from {color: #D89B31;}
     to {color: #fff;}
-}
-  
-/* Footer */
-.footer_whole {
-    background-color: #393d47;
-    border-top: 1px solid #fff;
-    text-align: center; 
-    padding: 20px 0; 
-}
-
-.footer-link {
-    color: #D89B31;
-    font-size: 18px;
-    margin: 0 20px; 
-    text-decoration: none; 
-}
-
-.footer-link:hover {
-    cursor: pointer;
-}
-
-.serving {
-    margin-top: 100px;
-    font-family: 'Zeyada', cursive;
-    text-align: center;
-    color: #D89B31;
-}
-
-#PrivacyP, #CookieP, #TandC {
-    color: #D89B31;
-    display: inline-block; 
-    box-sizing: border-box; 
-    margin-top: 10px;
-    font-size: 30px;
-    background-color: #393d47;
-}
-
-#PrivacyP:hover, #CookieP:hover, #TandC:hover {
-    animation-name: footerAnim;
-    animation-duration: 0.5s;
-    color: #fff;
 }
