@@ -121,16 +121,29 @@ nav ul li a:hover {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes footerAnim {
+    from {color: #D89B31;}
+    to {color: #fff;}
+}
   
 /* Footer */
-.footer_whole{
+.footer_whole {
     background-color: #393d47;
+    border-top: 1px solid #fff;
+    text-align: center; 
+    padding: 20px 0; 
 }
 
-.top-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer-link {
+    color: #D89B31;
+    font-size: 18px;
+    margin: 0 20px; 
+    text-decoration: none; 
+}
+
+.footer-link:hover {
+    cursor: pointer;
 }
 
 .serving {
@@ -140,29 +153,17 @@ nav ul li a:hover {
     color: #D89B31;
 }
 
-.PrivacyP {
+#PrivacyP, #CookieP, #TandC {
     color: #D89B31;
+    display: inline-block; 
+    box-sizing: border-box; 
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: #393d47;
 }
 
-.CookieP {
-    color: #D89B31;
-}
-
-.TandC {
-    color: #D89B31;
-}
-
-/* Mobile Menu Button */
-.mobile-menu {
-    display: none;
-    cursor: pointer;
-    float: right;
-    margin-right: 10px;
-}
-
-.mobile-menu .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px 0;
+#PrivacyP:hover, #CookieP:hover, #TandC:hover {
+    animation-name: footerAnim;
+    animation-duration: 0.5s;
+    color: #fff;
 }
