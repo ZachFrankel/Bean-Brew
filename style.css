@@ -142,3 +142,8 @@ nav ul li a:hover {
     background-color: #fff;
     margin: 5px 0;
 }
+
+.utcenter{
+    text-align: center;
+    text-decoration: underline;
+}
