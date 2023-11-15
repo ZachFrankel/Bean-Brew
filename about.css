@@ -48,3 +48,9 @@
     transform: scale(1.2);
     color: #007AFF;
   }
+
+  .team-member .roleGM {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 12.8px;
+  }
