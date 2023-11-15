@@ -5,21 +5,17 @@
     background: url(assets/images/AboutCover.jpg);
     background-size: cover;
     background-position: center;
-    transition: ease-in-out, 1.5s;
+    transition: ease-in-out, 0.8s;
 }
 
 .ABG:hover {
-    transition: 0.8;
-    background: url(assets/images/AboutCover1.jpg); /* Adjust the opacity value as needed */
+    transition: background 0.8s; /* Add the property and unit */
+    background: url(assets/images/AboutCover1.jpg); 
     margin-bottom: 1px;
     width: 100%;
     height: 545px;
     background-size: cover;
     background-position: center;
-}
-
-.ABG:active {
-    transition: 1; /* Reset opacity on click if needed */
 }
 
 
@@ -28,17 +24,18 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .team-member {
     text-align: center;
     margin: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21); /* Original box shadow */
     transition: transform 0.3s ease-in-out;
-  }
-  
+}
+
+
   .team-member:hover {
     transform: translateY(-10px);
   }
@@ -66,9 +63,10 @@
     font-size: 24px;
     margin: 0 10px;
     color: #000;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Align the transition properties */
     text-decoration: none;
-  }
+}
+
   
   .team-member:hover .fa {
     transform: scale(1.2);
