@@ -1,11 +1,26 @@
 .ABG {
-    margin-bottom: 1PX;
+    margin-bottom: 1px;
     width: 100%;
-    height: 450px;
+    height: 545px;
     background: url(assets/images/AboutCover.jpg);
     background-size: cover;
     background-position: center;
-    }
+    transition: ease-in-out, 1.5s;
+}
+
+.ABG:hover {
+    transition: 0.8;
+    background: url(assets/images/AboutCover1.jpg); /* Adjust the opacity value as needed */
+    margin-bottom: 1px;
+    width: 100%;
+    height: 545px;
+    background-size: cover;
+    background-position: center;
+}
+
+.ABG:active {
+    transition: 1; /* Reset opacity on click if needed */
+}
 
 
 .team-section {
