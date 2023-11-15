@@ -1,3 +1,13 @@
+.ABG {
+    margin-bottom: 1PX;
+    width: 100%;
+    height: 450px;
+    background: url(assets/images/AboutCover.jpg);
+    background-size: cover;
+    background-position: center;
+    }
+
+
 .team-section {
     display: flex;
     flex-wrap: wrap;
@@ -34,6 +44,7 @@
   .team-member .role {
     color: #888;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .fa {
@@ -51,6 +62,12 @@
 
   .team-member .roleGM {
     color: #888;
+    margin-bottom: 2.5px;
+    font-size: 12.85px;
+  }
+
+  .team-member .roleSM {
+    color: #888;
     margin-bottom: 10px;
-    font-size: 12.8px;
+    font-size: 14px;
   }
