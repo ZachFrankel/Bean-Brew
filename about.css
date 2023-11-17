@@ -1,0 +1,86 @@
+.ABG {
+    margin-bottom: 1px;
+    width: 100%;
+    height: 545px;
+    background: url(assets/images/AboutCover.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: ease-in-out, 0.8s;
+}
+
+.ABG:hover {
+    transition: background 0.8s; /* Add the property and unit */
+    background: url(assets/images/AboutCover1.jpg); 
+    margin-bottom: 1px;
+    width: 100%;
+    height: 545px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-member {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21); /* Original box shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+  .team-member:hover {
+    transform: translateY(-10px);
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .team-member h3 {
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .team-member .role {
+    color: #888;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .fa {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #000;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Align the transition properties */
+    text-decoration: none;
+}
+
+  
+  .team-member:hover .fa {
+    transform: scale(1.2);
+    color: #007AFF;
+  }
+
+  .team-member .roleGM {
+    color: #888;
+    margin-bottom: 2.5px;
+    font-size: 12.85px;
+  }
+
+  .team-member .roleSM {
+    color: #888;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
